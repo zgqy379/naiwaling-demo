@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>奶蛙零 · 连携短局 Demo</title>
+  <script type="module" crossorigin src="/naiwaling-demo/assets/index-BF1NjiMG.js"></script>
+  <link rel="stylesheet" crossorigin href="/naiwaling-demo/assets/index-d2Ckz9px.css">
+</head>
+<body>
+  <!-- 电视墙（语汇 7，最底层） -->
+  <div id="tvwall-layer">
+    <div class="tv-grid">
+      <div class="tv"><span>REC ●</span><i></i></div><div class="tv"><span>PLAY ▶</span><i></i></div><div class="tv"><span>VOL.0</span><i></i></div>
+      <div class="tv"><span>奶蛙零</span><i></i></div><div class="tv"><span>SIDE A</span><i></i></div><div class="tv"><span>1988</span><i></i></div>
+      <div class="tv"><span>REW ◀◀</span><i></i></div><div class="tv"><span>STOP ■</span><i></i></div><div class="tv"><span>EJECT ⏏</span><i></i></div>
+    </div>
+  </div>
+
+  <div id="game" style="display:none">
+    <canvas id="gl"></canvas>
+  </div>
+
+  <!-- VFX 叠层（2D 屏幕空间，不随相机） -->
+  <div id="vfx"></div>
+
+  <!-- HUD -->
+  <div id="hud"></div>
+  <div id="mute-state" class="mute-state">有声</div>
+
+  <!-- 开局手势屏（首屏 = 录像带封面，语汇 1/6） -->
+  <div id="start">
+    <div class="start-card">
+      <div class="vhs-label">奶蛙零 · VOL.0</div>
+      <h1>奶蛙零</h1>
+      <p class="sub">90 秒 · 3 轮 · 把对手笑到失衡</p>
+      <p class="keys">A/D 移动 · 按住空格 蓄「笑」· Shift 躲 · Tab/1/2/3 接力连携</p>
+      <p class="cta">点击任意处 / 按任意键 开局</p>
+      <p class="muted">桌面 Chrome / Edge 1080p · 建议有声（M 静音）</p>
+    </div>
+  </div>
+
+</body>
+</html>
